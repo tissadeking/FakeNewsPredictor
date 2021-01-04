@@ -15,7 +15,7 @@ with open('model.pickle', 'rb') as handle:
 
 @app.route('/')
 def main():
-    return render_template('index.html')
+    return render_template('htmlfile.html')
 @app.route('/predict',methods = ['GET', 'POST'])
 def predict():
     url = request.get_data(as_text = True)[5:]
@@ -27,7 +27,7 @@ def predict():
     news = article.summary
 
     label_prediction = model.predict([news])
-    return render_template('index.html', prediction_text = 'Result: {}'.format(label_prediction[0]))
+    return render_template('htmlfile.html', prediction_text = 'Result: {}'.format(label_prediction[0]))
 
 if __name__ == "__main__":
     port = int(os.environ.get('port', 5000))
