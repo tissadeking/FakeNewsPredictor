@@ -12,4 +12,3 @@ pandas>=0.19
 flask_cors
 click>=5.1
 Six
-itsdangerous>=0.24
