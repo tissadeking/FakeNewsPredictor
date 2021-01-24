@@ -13,3 +13,4 @@ flask_cors
 click>=5.1
 Six
 newspaper3k
+nltk
