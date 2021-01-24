@@ -11,8 +11,7 @@ app = Flask(__name__)
 CORS(app)
 app=flask.Flask(__name__, template_folder='templates')
 
-with open('model.pickle', 'rb') as handle:
-    model = pickle.load(handle)
+model = pickle.load(open('model.pickle', 'rb'))
 
 @app.route('/')
 def main():
