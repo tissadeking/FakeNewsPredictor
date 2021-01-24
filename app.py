@@ -3,7 +3,7 @@ from flask_cors import CORS
 import pickle
 import flask
 import os
-import newspaper3k as newspaper
+import newspaper
 from newspaper import Article
 import urllib
 
