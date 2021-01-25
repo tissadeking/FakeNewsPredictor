@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Detecting Fake News</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
+</head>
+<body>
+    <div class="page_layout">
+        <div class="info">
+            <h2><p class = "borderexample2">IT for Social Good</p></h2> <br>
+            <h3><p class = "borderexample">Fake News Predictor</p></h3>
+        </div>
+        <form action="{{ url_for('predict')}}"method="post">
+            <input type="text" name="news" placeholder="Enter news url" required="required" />
+            <br>
+            <button type="submit" class="btn2">Analyse</button>
+        </form>
+
+        <br>
+        <br>
+        <!--{{ prediction_text }} -->
+    </div>
+    <footer class="footer" data-background-color="black">
+        <p>© All Rights Reserved. Developed by <a href="index.html" title="Get to know Muonagor Chukwuemeka">Muonagor Chukwuemeka.</a></p>
+    </footer>
+</body>
+</html>
+
+<style type="text/css">
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    form {
+        margin: 0 auto;
+        width: auto;
+        text-align: center;
+    }
+    html {
+        height: 100%;
+        background-image: url('https://cdn.pixabay.com/photo/2015/01/03/15/03/klee-587479__340.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    body {
+        height: 100%;
+    }
+    .page_layout {
+        margin: 0 auto;
+        width: 30%;
+    }
+    .info {
+        margin-top: 50px;
+    }
+    form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .borderexample {
+        border-style: solid;
+        border-radius: 10px;
+        border-color: #3256cd;
+        width: 360px;
+        background: #3256cd;
+        color: white;
+        font-family: 'Helvetica Neue', sans-serif;
+        text-align: center;
+        font-weight: normal;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .borderexample2 {
+        border-style: solid;
+        border-radius: 10px;
+        border-color: green;
+        width: 360px;
+        background: green;
+        color: yellow;
+        font-family: 'Helvetica Neue', sans-serif;
+        text-align: center;
+        font-weight: normal;
+        font-size: 30px;
+        margin: 0 auto;
+    }
+
+    input {
+        margin: 0 auto;
+        width: 358px;
+        text-align: center;
+    }
+
+    button {
+        display: flex;
+        align-self: center;
+        position: relative;
+        top: 18px;
+        margin: 0 auto;
+    }
+</style>
