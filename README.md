@@ -12,7 +12,7 @@ Steps to use the Predictor
 
 References
 
-1. Ravid Ahiya74: github.com/ravidahiya74/Fake-news-detection. 
+1. Ravid Ahiya74: https://github.com/ravidahiya74/Fake-news-detection. 
 2. https://codepen.io/frytyler/pen/EGdtg
 3. Filippos Dounis: Detecting Fake News with Python and ML. https://medium.com/swlh/detecting-fake-news-with-python-and-machine-learning-f78421d29a06.
 
